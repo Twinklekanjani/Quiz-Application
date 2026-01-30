@@ -1,0 +1,155 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    padding:20px;
+    color:#333;
+}
+
+.quiz-wrapper{
+    display:flex;
+    gap:20px;
+    height:90vh;
+}
+
+/* COMMON CARD */
+.card{
+    background:#fff;
+    border-radius:14px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* LEFT PANEL */
+.left-panel{
+    width:20%;
+}
+.left-panel h3{
+    margin-bottom:15px;
+    color:#2a5298;
+}
+
+.q-numbers{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.q-numbers span{
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:#e0e7ff;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.q-numbers .active{
+    background:#2a5298;
+    color:#fff;
+}
+
+/* MIDDLE PANEL */
+.middle-panel{
+    width:55%;
+    position:relative;
+}
+
+.badge{
+    background:#2a5298;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.question{
+    display:block;
+}
+.question.active{
+    display:block;
+}
+
+.question h2{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.options label:hover{
+    background:#f0f4ff;
+    border-color:#2a5298;
+}
+
+/* BUTTONS */
+.buttons{
+    position:absolute;
+    bottom:20px;
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+}
+
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:15px;
+    color:#fff;
+}
+
+.prev{ background:#6c757d; }
+.next{ background:#2a5298; }
+.submit{ background:#28a745; }
+
+/* RIGHT PANEL */
+.right-panel{
+    width:25%;
+}
+.right-panel h3{
+    color:#2a5298;
+    margin-bottom:15px;
+}
+
+.status-box{
+    display:flex;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.box{
+    width:18px;
+    height:18px;
+    border-radius:4px;
+    margin-right:10px;
+}
+
+.attempted{ background:#28a745; }
+.not-attempted{ background:#dc3545; }
+
+.counts{
+    margin-top:15px;
+    font-weight:600;
+}
